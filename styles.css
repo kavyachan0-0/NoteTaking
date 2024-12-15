@@ -1,0 +1,154 @@
+/* General Styling */
+body {
+    margin: 0;
+    padding: 0;    font-family: Arial, sans-serif;
+    background-color: #f8f9fa;
+    width: 100%;
+    height: 100%;
+    min-width: 400px; /* Standard Chrome extension popup width */
+    min-height: 500px; /* Standard Chrome extension popup height */
+    overflow-y: auto; /* Enable scrolling if content overflows */
+  }
+  
+  .ht {
+    text-align: center;
+    padding: 10px;
+  }
+  
+  #head {
+    margin: 0;
+    font-size: 1.5em;
+    color: #4caf50;
+    text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.3);
+  }
+  
+  .ht p {
+    margin: 0;
+    font-size: 0.9em;
+    color: #888;
+  }
+  
+  .container {
+    padding: 10px;
+    margin: auto;
+    background-color: rgba(255, 255, 255, 0.9); /* Slight transparency for better readability */
+    border-radius: 10px;
+    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.2);
+  }
+  
+  form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  
+  input, textarea {
+    width: 100%;
+    padding: 8px;
+    font-size: 0.9em;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #fff;
+    color: #333;
+  }
+  
+  textarea {
+    resize: none;
+    height: 80px;
+  }
+  
+  button {
+    padding: 10px;
+    font-size: 0.9em;
+    border: none;
+    border-radius: 5px;
+    background-color: #4caf50;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  button:hover {
+    background-color: #45a049;
+  }
+  
+  button:disabled {
+    background-color: #ccc;
+  }
+  
+  .grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 10px;
+    margin-top: 10px;
+  }
+  
+  .note {
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background-color: #fff;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  .note h2 {
+    margin: 0;
+    font-size: 1em;
+  }
+  
+  .note p {
+    margin: 5px 0;
+    font-size: 0.9em;
+    color: #555;
+  }
+  
+  .note button {
+    background-color: transparent;
+    color: #e74c3c;
+    font-size: 0.8em;
+    border: none;
+    cursor: pointer;
+  }
+  
+  #pagination {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 10px;
+  }
+  
+  #pagination button {
+    padding: 5px 10px;
+    font-size: 0.8em;
+    border: none;
+    border-radius: 3px;
+    background-color: #4caf50;
+    color: white;
+    cursor: pointer;
+  }
+  
+  #pageInfo {
+    font-size: 0.8em;
+  }
+  
+  /* Media Query for Smaller Screens */
+  @media (max-width: 320px) {
+    #head {
+      font-size: 1.2em;
+    }
+  
+    input, textarea, button {
+      font-size: 0.8em;
+      padding: 6px;
+    }
+  
+    .note h2 {
+      font-size: 0.9em;
+    }
+  
+    #pagination button {
+      padding: 4px 8px;
+      font-size: 0.7em;
+    }
+  }
+  
